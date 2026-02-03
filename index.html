@@ -58,7 +58,7 @@
 <body>
 
 <div class="container" id="box">
-    <h1>Will you be my Valentine? 💘</h1>
+    <h1>Nikhil, Will you be my Valentine? 💘</h1>
     <button id="yesBtn">Yes ❤️</button>
     <button id="noBtn">No 😜</button>
     <div id="message">Best decision ever 💖🥰</div>
@@ -67,7 +67,6 @@
 <script>
     const noBtn = document.getElementById("noBtn");
     const yesBtn = document.getElementById("yesBtn");
-    const message = document.getElementById("message");
     const box = document.getElementById("box");
 
     noBtn.addEventListener("mouseover", () => {
@@ -78,7 +77,18 @@
     });
 
     yesBtn.addEventListener("click", () => {
-        box.innerHTML = "<h1>Best decision ever 💖🥰</h1>";
+        box.innerHTML = `
+            <h1>Best decision ever, Nikhil 💖🥰</h1>
+            <img src="us.jpg" alt="Us" style="
+                width: 260px;
+                margin-top: 20px;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            ">
+            <p style="font-size:18px; margin-top:15px;">
+                I love you so much ❤️ Happy Valentine’s Day!
+            </p>
+        `;
     });
 </script>
 
